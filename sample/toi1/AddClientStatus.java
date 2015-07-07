@@ -3,7 +3,7 @@
 
 /* AddPersonStatus
  */
-public class AddCustomerStatus extends ConsoleStatus {
+public class AddClientStatus extends ConsoleStatus {
 
 	// フィールド
 	private ClientList cl;
@@ -16,13 +16,13 @@ public class AddCustomerStatus extends ConsoleStatus {
 	private String[] data = new String[ 3 ];
 
 	/**
-	 * コンストラクタ AddCustomerStatus
+	 * コンストラクタ AddClientStatus
 	 * @param String firstMess
 	 * @param String promptMess
 	 * @param boolean IsEndStatus
 	 * @param ClientList cl
 	 */
-	AddCustomerStatus( String firstMess, String promptMess,
+	AddClientStatus( String firstMess, String promptMess,
 	                 boolean IsEndStatus, ClientList cl ) {
 		super( firstMess, promptMess, IsEndStatus );
 		this.cl = cl;

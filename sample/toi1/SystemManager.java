@@ -27,8 +27,8 @@ public class SystemManager {
 	private AddWorkStatus sts11;
 	private DeleteWorkStatus sts12;
 	private ExitStatus sts13;
-    private AddCustomerStatus sts14; //CI/CU
-    private UpdateCustomerStatus sts15; //CI/CU
+    private AddClientStatus sts14; //CI/CU
+    private UpdateClientStatus sts15; //CI/CU
 
 	public static void main( String[] args ) {
 		try {
@@ -182,7 +182,7 @@ public class SystemManager {
 		 );
 
         // 顧客の情報を更新する状態
-        sts14 = new AddCustomerStatus(
+        sts14 = new AddClientStatus(
             "",
 		    "エンターキーを押すとメニューに戻ります。>",
 		    false,
@@ -190,7 +190,7 @@ public class SystemManager {
          );
 
         // 顧客の情報を更新する状態
-        sts15 = new UpdateCustomerStatus(
+        sts15 = new UpdateClientStatus(
             "",
 		    "更新しました。\nエンターキーを押すとメニューに戻ります。>",
 		    false,

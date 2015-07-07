@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /* UpdatePersonStatus
  */
-public class UpdateCustomerStatus extends ConsoleStatus {
+public class UpdateClientStatus extends ConsoleStatus {
 
 	// フィールド
 	private ClientList cl;
@@ -23,7 +23,7 @@ public class UpdateCustomerStatus extends ConsoleStatus {
 	 * @param boolean IsEndStatus
 	 * @param ClientList cl
 	 */
-	UpdateCustomerStatus( String firstMess, String promptMess,
+	UpdateClientStatus( String firstMess, String promptMess,
 	                 boolean IsEndStatus, ClientList cl ) {
 		super( firstMess, promptMess, IsEndStatus );
 		this.cl = cl;
@@ -31,7 +31,7 @@ public class UpdateCustomerStatus extends ConsoleStatus {
 	}
 
 	// 最初に出力するメッセージを表示する
-	// このクラスでは従業員のデータの更新処理
+	// このクラスでは顧客のデータの更新処理
 	// のみを行う
 	/** displayFirstMess
 	 * @throws IOException
@@ -43,7 +43,7 @@ public class UpdateCustomerStatus extends ConsoleStatus {
 		System.out.print( "顧客IDを入力してください。\n>" );
 		data = inputMessage();
 		try {
-			id = Integer.parseInt( data ); // 従業員ID
+			id = Integer.parseInt( data ); // 顧客ID
 		} catch( NumberFormatException e ) {
 			System.out.println( "数値に変換できないデータが入力されています。" );
 			System.out.println( "再入力してください。" );
@@ -59,7 +59,7 @@ public class UpdateCustomerStatus extends ConsoleStatus {
 			return;
 		}
 
-		// 従業員の情報の出力
+		// 顧客の情報の出力
 		System.out.println( c.toString() );
 
 		System.out.println( "\n更新したい項目を入力してください。" );
